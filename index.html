@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Yanchengting</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -27,11 +27,11 @@
       <!-- 在下方div加上 id="bs-example-navbar-collapse-1" 可以將本來橫向的li選項包到漢堡選單裡面，使之按下可以顯示 -->
       <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
         <div class="nav navbar-nav navbar-right ">
-          <li><a href="#">關於 ABOUT</a></li>
-          <li><a href="#">堅持 PERSIST</a></li>
-          <li><a href="#">產品 PRODUCT</a></li>
-          <li><a href="#">位置 LOCATION</a></li>
-          <li><a href="#">聯絡我們 CONTACT</a></li>
+          <li><a href="#" id="scrollToAbout">關於 ABOUT</a></li>
+          <li><a href="#" id="scrollToPersist">堅持 PERSIST</a></li>
+          <li><a href="#" id="scrollToProduct">產品 PRODUCT</a></li>
+          <li><a href="#" id="scrollToLocation">位置 LOCATION</a></li>
+          <li><a href="#" id="scrollToContact">聯絡我們 CONTACT</a></li>
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@
     </div>
   </header>
   <!-- ===section_about=== -->
-  <section class="section_about">
+  <section class="section_about" id="about">
     <div class="container">
       <div class="row">
         <div class="col-sm-5 img" data-bottom-top="opacity:0" data-center="opacity:1">
@@ -89,7 +89,7 @@
     </div>
   </section>
   <!-- ===section_persist=== -->
-  <section class="section_persist">
+  <section class="section_persist" id="persist">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -109,7 +109,7 @@
         </div>
         <div class="col-sm-4">
           <div class="wrap_img">
-            <img src="https://scontent.ftpe2-2.fna.fbcdn.net/v/t31.0-8/17966767_1667775263527891_7724242635159068396_o.jpg?oh=ac88f5c131debc5b5f13d60e67e6c4de&oe=5B222057" alt="">          
+            <img src="img/fruit.jpg" alt="">          
           </div>
           <h4>味覺</h4> 
           <p>嚴選食材</p>
@@ -128,7 +128,7 @@
   </section>
 
 <!-- ===section_product=== -->
-  <section class="section_product">
+  <section class="section_product" id="product">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -165,13 +165,11 @@
   </sectino>
 
 <!-- ===section_location=== -->
-  <section class="section_location">
+  <section class="section_location" id="location">
     <div class="container">
       <div class="row img">
         <div class="col-sm-7">
-          <div class="iframe-rwd">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.7696169185097!2d120.28154365056467!3d22.625076735082928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x20d1b78ce3aeeab6!2z6bm95Z-V55S6IC8gWWFuY2hlbmd0aW5n!5e0!3m2!1szh-TW!2stw!4v1518141812942" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
+          <div id="map"></div>
         </div>
         <div class="col-sm-5">
           <h4>地址:</h4><p>高雄市鹽埕區富野路56巷10號</p><br>
@@ -195,5 +193,25 @@
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/all.js"></script>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of yanchengting
+      var yanchengting = {lat: 22.628302, lng: 120.284727};
+      // The map, centered at yanchengting
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 18, center: yanchengting});
+      // The marker, positioned at yanchengting
+      var marker = new google.maps.Marker({position: yanchengting, map: map});
+    }
+        </script>
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP5cur04iq8tTsB5SbnCvf2yeiWY05GHA&callback=initMap">
+  </script>
 </body>
 </html>
