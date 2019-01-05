@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yanchengting</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -204,7 +206,21 @@
           document.getElementById('map'), {zoom: 18, center: yanchengting});
       // The marker, positioned at yanchengting
       var marker = new google.maps.Marker({position: yanchengting, map: map});
+
+      var data = [
+        {
+          position: {lat: 22.628040, lng: 120.284813},
+          map: map,
+          titile: '阿英排骨飯'
+        }
+        {
+          position: {lat: 22.628040, lng: 120.284813},
+          map: map,
+          titile: '豆花'
+        }
+      ]
     }
+
         </script>
         <!--Load the API from the specified URL
         * The async attribute allows the browser to render the page while the API loads
