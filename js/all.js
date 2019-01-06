@@ -36,4 +36,13 @@ $(document).ready(function(){
     }, 2000);
   });    
 
+  window.addEventListener("load", function(event) {
+    var seeLocation = document.querySelector('.where');
+    addcart.addEventListener('click',function(e){
+      e.preventDefault();
+      mixpanel.track("seeLocation");
+      alert('想看在哪裡');
+    })  
+  
+ });   
 })
