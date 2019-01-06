@@ -41,7 +41,6 @@ $(document).ready(function(){
     seeLocation.addEventListener('click',function(e){
       e.preventDefault();
       mixpanel.track("seeLocation");
-      alert('想看在哪裡');
     });
  });   
 });
