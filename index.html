@@ -1,287 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yanchengting</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- start Mixpanel -->
-  <script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
-  0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-  for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
-  MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
-  mixpanel.init("7c21e3571ab3ea590faeddc441a70bd3");</script><!-- end Mixpanel -->  
-  <script>
-    mixpanel.track("pageview");
-  </script>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yanchengting</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
+
 <body>
-  <!-- ===navbar=== -->
-  <nav class="navbar navbar-default navbar-fixed-top navbar-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- ===縮合視窗時會出現的漢堡選單=== -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+    <!-- ===navbar=== -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- ===縮合視窗時會出現的漢堡選單=== -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-        <a href="#" class="navbar-brand">
-          <div class="wrap_img">
-            <img src="img/yan_logo.jpg" alt="">
-          </div>
-        </a>
-      </div>
-      <!-- 在下方div加上 id="bs-example-navbar-collapse-1" 可以將本來橫向的li選項包到漢堡選單裡面，使之按下可以顯示 -->
-      <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
-        <div class="nav navbar-nav navbar-right ">
-          <li><a href="#" id="scrollToAbout">關於 ABOUT</a></li>
-          <li><a href="#" id="scrollToPersist">堅持 PERSIST</a></li>
-          <li><a href="#" id="scrollToProduct">產品 PRODUCT</a></li>
-          <li><a href="#" id="scrollToLocation" class="where">位置 LOCATION</a></li>
-          <li><a href="#" id="scrollToContact">聯絡我們 CONTACT</a></li>
+                <a href="#" class="navbar-brand">
+                    <div class="wrap_img">
+                        <img src="img/yan_logo.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+            <!-- 在下方div加上 id="bs-example-navbar-collapse-1" 可以將本來橫向的li選項包到漢堡選單裡面，使之按下可以顯示 -->
+            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+                <div class="nav navbar-nav navbar-right ">
+                    <li><a href="#" id="scrollToAbout">關於 ABOUT</a></li>
+                    <li><a href="#" id="scrollToPersist">堅持 PERSIST</a></li>
+                    <li><a href="#" id="scrollToProduct">產品 PRODUCT</a></li>
+                    <li><a href="#" id="scrollToLocation" class="where">位置 LOCATION</a></li>
+                    <li><a href="#" id="scrollToContact">聯絡我們 CONTACT</a></li>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
-  <!-- ===jumbotron=== -->
-  <header class="jumbotron">
-    <div class="container">
-      <h1 data-0="transform:
+    </nav>
+    <!-- ===jumbotron=== -->
+    <header class="jumbotron">
+        <div class="container">
+            <h1 data-0="transform:
             translateY(-50px)" data-300="transform:
             translateY(100px)">鹽埕町 / Yanchengting</h1>
-      <hr>
-      <p data-0="transform:
+            <hr>
+            <p data-0="transform:
             translateY(-50px)" data-300="transform:
             translateY(100px)">專門提供日式冰品</p>
-    </div>
-  </header>
-  <!-- ===section_about=== -->
-  <section class="section_about" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 img" data-bottom-top="opacity:0" data-center="opacity:1">
-        
         </div>
-        <div class="col-sm-7" data-bottom-top="opacity:0" data-center="opacity:1">
-          <h4>關於我們</h4>  
-          <p>店內提供舒適放鬆的環境，藉由冰品和日式空間，彷彿置身京都小店，滿足味覺與視覺雙饗宴。<br>本店與鹽埕周招其他特色小店共同參與老鹽埕成長，讓年輕人與老一輩人共享記憶中的鹽埕風光。</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
+    <!-- ===section_about=== -->
+    <section class="section_about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 img" data-bottom-top="opacity:0" data-center="opacity:1">
 
-  <!-- ===section_recent=== -->
-  <section class="section_recent">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-        <h2 data-bottom-top="opacity:0" data-center="opacity:1">2018 冬眠終了</h2>
-        <hr>
-        <p data-bottom-top="opacity:0" data-center="opacity:1">在2018年的冬天尾巴跟春天開始的這個時間點，<br>
-        <br>
-        我們又醒來了。<br>  
-        <br>
-        在冬眠的這段時間，我們做了室內小幅度的變動，<br>
-        <br>      
-      以及例行性的更新菜單，最重要的是我們想讓大家吃冰吃得更健康<br>
-      <br>
-    除了繼續使用嚴選食材以外，還將冰品份量減少，相對的價格也降低了。</p>
-        <div class="wrap_img" data-bottom-top="opacity:0" data-center="opacity:1">
-          <img src="img/diary.jpg" alt="">
+                </div>
+                <div class="col-sm-7" data-bottom-top="opacity:0" data-center="opacity:1">
+                    <h4>關於我們</h4>
+                    <p>店內提供舒適放鬆的環境，藉由冰品和日式空間，彷彿置身京都小店，滿足味覺與視覺雙饗宴。<br>本店與鹽埕周招其他特色小店共同參與老鹽埕成長，讓年輕人與老一輩人共享記憶中的鹽埕風光。</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
+    <!-- ===section_recent=== -->
+    <section class="section_recent">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 data-bottom-top="opacity:0" data-center="opacity:1">2018 冬眠終了</h2>
+                    <hr>
+                    <p data-bottom-top="opacity:0" data-center="opacity:1">在2018年的冬天尾巴跟春天開始的這個時間點，<br>
+                        <br> 我們又醒來了。
+                        <br>
+                        <br> 在冬眠的這段時間，我們做了室內小幅度的變動，
+                        <br>
+                        <br> 以及例行性的更新菜單，最重要的是我們想讓大家吃冰吃得更健康
+                        <br>
+                        <br> 除了繼續使用嚴選食材以外，還將冰品份量減少，相對的價格也降低了。
+                    </p>
+                    <div class="wrap_img" data-bottom-top="opacity:0" data-center="opacity:1">
+                        <img src="img/diary.jpg" alt="">
+                    </div>
 
-      </div>
-    </div>
-  </section>
-  <!-- ===section_persist=== -->
-  <section class="section_persist" id="persist">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2>堅持</h2>
-          <hr>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="wrap_img" data-bottom-top="transform:
-            translateX(-200px);opacity:0" data-center="transform:
-            translateX(0px);opacity:1">
-            <img src="https://i.ytimg.com/vi/VITLQ2fbKwQ/hqdefault.jpg" alt="">          
-          </div>
-          <h4>口感</h4>
-          <p>日本原裝swan刨冰機、日本原裝初雪刨冰機</p>
-        </div>
-        <div class="col-sm-4">
-          <div class="wrap_img">
-            <img src="img/fruit.jpg" alt="">          
-          </div>
-          <h4>味覺</h4> 
-          <p>結合日本食材與當地當令嚴選食材</p>
-        </div>
-        <div class="col-sm-4">
-          <div class="wrap_img" data-bottom-top="transform:
-            translateX(200px);opacity:0" data-center="transform:
-            translateX(0px);opacity:1">
-            <img src="img/beauty.jpg" alt="">          
-          </div>
-          <h4>美感</h4>
-          <p>less is more 只留下最重要的元素</p>
-        </div>
-      </div>
-    </div>
-  </section>
+                </div>
 
-<!-- ===section_product=== -->
-  <section class="section_product" id="product">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2>產品</h2>
-          <p>雪花冰、刨冰</p>
-          <hr>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="thumbnail" data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1">
-            <img src="img/kaki1.jpg" alt="">          
-          </div>
-          <h4 data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1">抹茶刨冰</h4> 
-          <p data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1">丸九小山園</p> 
+    </section>
+    <!-- ===section_persist=== -->
+    <section class="section_persist" id="persist">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>堅持</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="wrap_img" data-bottom-top="opacity:0" data-center="opacity:1">
+                        <img src="https://i.ytimg.com/vi/VITLQ2fbKwQ/hqdefault.jpg" alt="">
+                    </div>
+                    <h4>口感</h4>
+                    <p>日本原裝swan刨冰機、日本原裝初雪刨冰機</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wrap_img" data-bottom-top="opacity:0" data-center="opacity:1">
+                        <img src="img/fruit.jpg" alt="">
+                    </div>
+                    <h4>味覺</h4>
+                    <p>結合日本食材與當地當令嚴選食材</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wrap_img" data-bottom-top="opacity:0" data-center="opacity:1">
+                        <img src="img/beauty.jpg" alt="">
+                    </div>
+                    <h4>美感</h4>
+                    <p>less is more 只留下最重要的元素</p>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-4">
-          <div class="thumbnail" data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1">
-            <img src="img/sun.jpg" alt="">          
-          </div>
-          <h4 data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1">好秋的夕陽</h4> 
-          <p data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1">有機胡蘿蔔</p> 
-        </div>
-        <div class="col-sm-4">
-          <div class="thumbnail" data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1">
-            <img src="img/chestnut.jpg" alt="">          
-          </div>
-          <h4 data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1">栗子刨冰</h4> 
-          <p data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform:scale(1);opacity:1">進口栗子</p> 
-        </div>
-        
-      </div>
-    </div>
-  </sectino>
+    </section>
 
-<!-- ===section_location=== -->
-  <section class="section_location" id="location">
-    <div class="container">
-      <div class="row img">
-        <div class="col-sm-7">
-          <div id="map"></div>
+    <!-- ===section_product=== -->
+    <section class="section_product" id="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>產品</h2>
+                    <p>雪花冰、刨冰</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="thumbnail" data-bottom-top="opacity:0" data-center="opacity:1">
+                        <img src="img/kaki1.jpg" alt="">
+                    </div>
+                    <h4 data-bottom-top="opacity:0" data-center="opacity:1">抹茶刨冰</h4>
+                    <p data-bottom-top="opacity:0" data-center="opacity:1">丸九小山園</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail" data-bottom-top="opacity:0" data-center="opacity:1">
+                        <img src="img/sun.jpg" alt="">
+                    </div>
+                    <h4 data-bottom-top="opacity:0" data-center="opacity:1">好秋的夕陽</h4>
+                    <p data-bottom-top="opacity:0" data-center="opacity:1">有機胡蘿蔔</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail" data-bottom-top="opacity:0" data-center="opacity:1">
+                        <img src="img/chestnut.jpg" alt="">
+                    </div>
+                    <h4 data-bottom-top="opacity:0" data-center="opacity:1">栗子刨冰</h4>
+                    <p data-bottom-top="opacity:0" data-center="opacity:1">進口栗子</p>
+                </div>
+
+            </div>
         </div>
-        <div class="col-sm-5">
-          <h4>地址:</h4><p>高雄市鹽埕區富野路56巷10號</p><br>
-          <h4>公共運輸:</h4><p>鹽埕埔捷運站2號出口步行約5分鐘左右即可到達。</p>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
+        </sectino>
 
-<!-- ==footer_jumbotron=== -->
-  <footer class="jumbotron">
-    <div class="container">
-      <h2>期待為您服務</h2>
-      <hr>
-      <div id="player" style="display:none"></div>
-    </div>
-  </footer>
+        <!-- ===section_location=== -->
+        <section class="section_location" id="location">
+            <div class="container">
+                <div class="row img">
+                    <div class="col-sm-7">
+                        <div id="map"></div>
+                    </div>
+                    <div class="col-sm-5">
+                        <h4>地址:</h4>
+                        <p>高雄市鹽埕區富野路56巷10號</p><br>
+                        <h4>公共運輸:</h4>
+                        <p>鹽埕埔捷運站2號出口步行約5分鐘左右即可到達。</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
 
-  <!-- ===js=== -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-  <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/all.js"></script>
-<!-- start Google Map -->
-  <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of yanchengting
-      var yanchengting = {lat: 22.628040, lng: 120.284813};
-      
-      // The map, centered at yanchengting
-      var map = new google.maps.Map(
-          document.getElementById('map'), {zoom: 18, center: yanchengting});
-      // The marker, positioned at yanchengting
-      var marker = new google.maps.Marker({position: yanchengting, map: map});
+        <!-- ==footer_jumbotron=== -->
+        <footer class="jumbotron">
+            <div class="container">
+                <h2>期待為您服務</h2>
+                <hr>
+                <div id="player" style="display:none"></div>
+            </div>
+        </footer>
 
-      var data = [
-        {
-          position: {lat: 22.628040, lng: 120.284813},
-          map: map,
-          titile: '阿英排骨飯'
-        },
-        {
-          position: {lat: 22.628040, lng: 120.284813},
-          map: map,
-          titile: '豆花'
-        }
-      ]
-    }
-  </script>
-  <!--Load the API from the specified URL
+        <!-- ===js=== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/all.js"></script>
+        <!-- start Google Map -->
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of yanchengting
+                var yanchengting = {
+                    lat: 22.628040,
+                    lng: 120.284813
+                };
+
+                // The map, centered at yanchengting
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {
+                        zoom: 18,
+                        center: yanchengting
+                    });
+                // The marker, positioned at yanchengting
+                var marker = new google.maps.Marker({
+                    position: yanchengting,
+                    map: map
+                });
+
+                var data = [{
+                    position: {
+                        lat: 22.628040,
+                        lng: 120.284813
+                    },
+                    map: map,
+                    titile: '阿英排骨飯'
+                }, {
+                    position: {
+                        lat: 22.628040,
+                        lng: 120.284813
+                    },
+                    map: map,
+                    titile: '豆花'
+                }]
+            }
+        </script>
+        <!--Load the API from the specified URL
   * The async attribute allows the browser to render the page while the API loads
   * The key parameter will contain your own API key (which is not needed for this tutorial)
   * The callback parameter executes the initMap() function
   -->
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP5cur04iq8tTsB5SbnCvf2yeiWY05GHA&callback=initMap">
-  </script>
-<!-- start Youtube -->
-  <script>
-    // 2. This code loads the IFrame Player API code asynchronously.
-    var tag = document.createElement('script');
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP5cur04iq8tTsB5SbnCvf2yeiWY05GHA&callback=initMap">
+        </script>
+        <!-- start Youtube -->
+        <script>
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
 
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    // 3. This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        height: '390',
-        width: '640',
-        videoId: 'K8xv6-Fc2fY',
-        events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-        }
-      });
-    }
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            var player;
 
-    // 4. The API will call this function when the video player is ready.
-    function onPlayerReady(event) {
-      event.target.playVideo();
-    }
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    height: '390',
+                    width: '640',
+                    videoId: 'K8xv6-Fc2fY',
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
 
-    // 5. The API calls this function when the player's state changes.
-    //    The function indicates that when playing a video (state=1),
-    //    the player should play for six seconds and then stop.
-    var done = false;
-    function onPlayerStateChange(event) {
-      if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 180000);
-        done = true;
-      }
-    }
-    function stopVideo() {
-      player.stopVideo();
-    }
-  </script>
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+                event.target.playVideo();
+            }
+
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            var done = false;
+
+            function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                    setTimeout(stopVideo, 180000);
+                    done = true;
+                }
+            }
+
+            function stopVideo() {
+                player.stopVideo();
+            }
+        </script>
 </body>
+
 </html>
