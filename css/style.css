@@ -1,101 +1,161 @@
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-size: bold; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-size: bold;
+}
 
 nav {
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
 
 nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
-  background-color: transparent; }
-  nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
-    color: white; }
-    nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
-      color: #062c54; }
+    background-color: transparent;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
+    color: white;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
+    color: #062c54;
+}
 
 header.jumbotron {
-  text-align: center;
-  background-image: url(../img/header-jumbotron.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
-  header.jumbotron .container {
+    text-align: center;
+    background-image: url(../img/header-jumbotron.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header.jumbotron .container {
     padding: 100px 0;
-    color: white; }
-    header.jumbotron .container .wrap_img {
-      width: 20px; }
+    color: white;
+}
+
+header.jumbotron .container .wrap_img {
+    width: 20px;
+}
 
 section.section_about {
-  margin-bottom: 35px;
-  padding-bottom: 35px;
-  padding: 35px;
-  background-color: #062c54;
-  color: white; }
-  section.section_about .col-sm-7 {
-    padding: 30px; }
-  section.section_about .col-sm-5.img {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    padding: 35px;
+    background-color: #062c54;
+    color: white;
+}
+
+section.section_about .col-sm-7 {
+    padding: 30px;
+}
+
+section.section_about .col-sm-5.img {
     background-image: url(../img/about.jpg);
     background-size: cover;
-    height: 300px; }
+    height: 300px;
+}
 
 section.section_recent {
-  margin-bottom: 30px; }
-  section.section_recent .col-sm-12 {
-    text-align: center; }
-    section.section_recent .col-sm-12 .wrap_img {
-      margin: 35px auto;
-      width: 300px; }
-      section.section_recent .col-sm-12 .wrap_img img {
-        width: 100%; }
+    margin-bottom: 30px;
+}
+
+section.section_recent .col-sm-12 {
+    text-align: center;
+}
+
+section.section_recent .col-sm-12 .wrap_img {
+    margin: 35px auto;
+    width: 300px;
+}
+
+section.section_recent .col-sm-12 .wrap_img img {
+    width: 100%;
+}
 
 section.section_persist {
-  background-color: #062c54;
-  text-align: center;
-  color: white; }
-  section.section_persist .wrap_img {
+    background-color: #062c54;
+    text-align: center;
+    color: white;
+}
+
+section.section_persist .wrap_img {
     height: 220px;
-    overflow: hidden; }
-    section.section_persist .wrap_img img {
-      width: 100%; }
+    overflow: hidden;
+}
+
+section.section_persist .wrap_img img {
+    width: 100%;
+}
 
 section.section_product {
-  text-align: center; }
-  section.section_product .col-sm-4 img {
-    width: 100%; }
+    text-align: center;
+}
+
+section.section_product .col-sm-4 img {
+    width: 100%;
+}
 
 section.section_location {
-  background-image: url(../img/location.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  color: white; }
-  section.section_location .row {
-    margin: 30px 0; }
-    section.section_location .row .iframe-rwd {
-      position: relative;
-      padding-bottom: 65.25%;
-      padding-top: 30px;
-      height: 0;
-      overflow: hidden; }
-    section.section_location .row .iframe-rwd iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-    section.section_location .row .col-sm-5 {
-      padding-top: 120px; }
+    background-image: url(../img/location.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+section.section_location .row {
+    margin: 30px 0;
+}
+
+section.section_location .row .iframe-rwd {
+    position: relative;
+    padding-bottom: 65.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+section.section_location .row .iframe-rwd iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.section_location .row .col-sm-5 {
+    padding-top: 120px;
+}
 
 footer.jumbotron {
-  text-align: center;
-  background-image: url(../img/header-jumbotron.jpg);
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed; }
-  footer.jumbotron .container {
+    text-align: center;
+    background-image: url(../img/header-jumbotron.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+footer.jumbotron .container {
     padding: 150px 0;
-    color: white; }
+    color: white;
+}
+
+
 /* Set the size of the div element that contains the map */
+
 #map {
-  height: 400px;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
 }
